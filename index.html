@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharat Ads Network</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar-header">
+    <div class="menu-btn" id="menuBtn">☰</div>
+
+    <div class="logo-container">
+        <img src="bharat-log.png" alt="Bharat Ads Network" class="logo-img">
+    </div>
+
+    <nav class="nav-buttons">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="network.html">Our Network</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+
+
+<!-- SIDE MENU -->
+<nav class="side-menu" id="sideMenu">
+    <a href="#services">Services</a>
+    <a href="#why">Why Choose Us</a>
+    <a href="#how">How It Works</a>
+    <a href="terms-and-condition.html">Terms & Condition</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+</nav>
+
+<!-- OVERLAY -->
+<div class="overlay" id="overlay"></div>
+
+<!-- PAGE -->
+<div class="page">
+
+    <!-- HERO -->
+    <section class="hero-section" id="hero">
+    <div class="hero-container">
+
+        <!-- LEFT IMAGE -->
+        <div class="hero-image">
+    <img src="heroimage.jpeg" alt="Brand Promotion">
+</div>
+
+        <!-- CENTER TEXT -->
+        <div class="hero-content">
+         <h1>
+        YOUR LOCALIZED<br>
+        <span class="highlight">BRANDING</span> PARTNER </h1>
+   
+        </div>
+
+        <!-- RIGHT FORM -->
+        <form class="contact-form" onsubmit="sendToWhatsApp(); return false;">
+            <h2 class="form-heading">GET YOUR QUETATION</h2>
+
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Phone</label>
+                <input type="tel" id="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label>Message</label>
+                <textarea id="message"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+    </div>
+</section>
+
+    <!-- MEDIA -->
+    <section class="mediaOffer">
+
+        <!-- TEXT -->
+        <div class="media-header">
+            <h2>WE OFFER MEDIA</h2>
+            <p><strong>OFFER OVER 50+ SCREENING</strong> IN SHOPS & LOCAL AREA.</p>
+            <p>
+                We help brands grow visibility at the grassroots level through smart,
+                affordable, and high-impact advertising solutions.
+                From shops to streets — we make your brand visible where it matters.
+            </p>
+        </div>
+
+        <!-- VIDEO -->
+        <div class="media-videos">
+            <video autoplay muted loop playsinline>
+                <source src="our-media.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>ABOUT US</h2>
+        <p>
+            Bharat Ads Network is a localized advertising company helping brands
+            reach customers at the ground level.
+            <br>
+            Maximum visibility. Minimum cost. Real impact
+        </p>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+        <h2>OUR SERVICES</h2>
+        <ul class="arrow-list">
+            <li>In-Store Advertising</li>
+            <li>Local Area Branding</li>
+            <li>Brand Promotion Campaigns</li>
+            <li>Retail Partner Network</li>
+        </ul>
+    </section>
+
+    <!-- WHY -->
+    <section id="why">
+        <h2>WHY CHOOSE US</h2>
+        <ul class="arrow-list">
+            <li>Local Market Expertise</li>
+            <li>Affordable Pricing</li>
+            <li>Strong Retail Network</li>
+            <li>Transparent Execution</li>
+            <li>Real Business Results</li>
+        </ul>
+    </section>
+
+    <!-- HOW -->
+    <section id="how">
+        <h2>HOW IT WORKS</h2>
+        <ul class="arrow-list">
+            <li>Understand Your Brand & Target Area</li>
+            <li>Plan the Right Advertising Format</li>
+            <li>Execute Through Our Retail Network</li>
+            <li>Track Visibility & Results</li>
+        </ul>
+    </section>
+
+  <section id="contact" class="contact-section">
+
+    <h2>Contact Us</h2>
+
+    <div class="contact-box">
+
+        <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>bharatadsnetwork@gmail.com</span>
+        </div>
+
+        <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+91 7979824170</span>
+        </div>
+
+        <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Jamshedpur</span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FLOATING CONTACT BUTTONS -->
+<div class="floating-contact">
+    <a href="https://wa.me/917979824170" target="_blank" class="float-btn whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <a href="tel:+917979824170" class="float-btn call">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+</div>
+
+<script src="index.js" defer></script>
+
+</body>
+</html>
