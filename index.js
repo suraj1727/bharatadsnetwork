@@ -115,3 +115,116 @@ function sendToWhatsApp() {
 
     window.open(whatsappURL, "_blank");
 }
+
+/* =========================================================
+   BHARAT ADS NETWORK
+   OUR CLIENTS JAVASCRIPT
+   ========================================================= */
+
+const clientData = {
+
+    rvs: {
+        title: "RVS College of Engineering & Technology",
+
+        text:
+        "RVS CET is one of the brands using Bharat Ads Network for local visibility and targeted in-store advertising campaigns."
+    },
+
+
+    cfs: {
+        title: "Centre For Sight",
+
+        text:
+        "Centre For Sight uses local digital advertising to increase brand visibility and reach customers across targeted retail locations."
+    },
+
+
+    suzuki: {
+        title: "Suzuki",
+
+        text:
+        "Suzuki campaign visibility through Bharat Ads Network's retail screen advertising network."
+    },
+
+
+    vedansh: {
+        title: "Vedansh Capital Services",
+
+        text:
+        "Vedansh Capital Services is a financial services brand using Bharat Ads Network for targeted local brand visibility."
+    },
+
+
+    omar: {
+        title: "Omar Salon & Spa",
+
+        text:
+        "Omar Salon & Spa is a unisex salon and spa brand using Bharat Ads Network for local advertising and customer reach."
+    }
+
+};
+
+
+/* ================= OPEN POPUP ================= */
+
+function showClient(client) {
+
+    const modal =
+        document.getElementById("clientModal");
+
+    const title =
+        document.getElementById("modalTitle");
+
+    const text =
+        document.getElementById("modalText");
+
+
+    if (!clientData[client]) {
+        return;
+    }
+
+
+    title.textContent =
+        clientData[client].title;
+
+    text.textContent =
+        clientData[client].text;
+
+
+    modal.classList.add("active");
+
+    document.body.style.overflow =
+        "hidden";
+}
+
+
+/* ================= CLOSE POPUP ================= */
+
+function closeClient() {
+
+    const modal =
+        document.getElementById("clientModal");
+
+
+    modal.classList.remove("active");
+
+
+    document.body.style.overflow =
+        "";
+}
+
+
+/* ================= ESC KEY ================= */
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (event.key === "Escape") {
+
+            closeClient();
+
+        }
+
+    }
+);
