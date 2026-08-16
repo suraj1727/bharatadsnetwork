@@ -304,9 +304,7 @@ body {
 
 /* Section box */
 
-#services{
-     background: rgba(128, 128, 128, 0.171);
-}
+
 #why{
     background: white;
 }
@@ -314,7 +312,6 @@ body {
      background: rgba(128, 128, 128, 0.171);
 }
 
-#services,
 #why,
 #how {
     max-width: 1100px;
@@ -325,7 +322,7 @@ body {
 }
 
 /* Headings */
-#services h2,
+
 #why h2,
 #how h2 {
     color: #ff7a00;
@@ -334,7 +331,7 @@ body {
 }
 
 /* Paragraphs */
-#services p,
+
 #why p,
 #how p {
     color: #162a5f;
@@ -543,7 +540,6 @@ section:nth-child(4) { animation-delay: 0.8s; }
 
 /* CARD HOVER EFFECT (applies to all sections) */
 #about:hover,
-#services:hover,
 #why:hover,
 #how:hover,
 .mediaOffer:hover,
@@ -677,7 +673,7 @@ section:nth-child(4) { animation-delay: 0.8s; }
 
     /* ABOUT + SECTIONS */
     #about,
-    #services,
+    
     #why,
     #how,
     .network-section {
@@ -686,14 +682,14 @@ section:nth-child(4) { animation-delay: 0.8s; }
     }
 
     #about h2,
-    #services h2,
+    
     #why h2,
     #how h2 {
         font-size: 24px;
     }
 
     #about p,
-    #services p,
+  
     #why p,
     #how p {
         font-size: 16px;
@@ -1288,4 +1284,1173 @@ section:nth-child(4) { animation-delay: 0.8s; }
     .client-modal-box {
         padding: 35px 22px;
     }
+}
+
+/* =========================================================
+   BHARAT ADS NETWORK
+   OUR SERVICES
+   ========================================================= */
+
+
+/* ================= MAIN SECTION ================= */
+
+.ban-services {
+
+    width: 100%;
+
+    padding:
+        90px 20px;
+
+    background:
+        #ffffff;
+
+    overflow: hidden;
+}
+
+
+.ban-services-container {
+
+    width: 100%;
+
+    max-width:
+        1250px;
+
+    margin:
+        0 auto;
+}
+
+
+
+/* ================= HEADING ================= */
+
+.ban-services-heading {
+
+    max-width:
+        850px;
+
+    margin:
+        0 auto 45px;
+
+    text-align:
+        center;
+}
+
+
+.ban-services-kicker {
+
+    display:
+        inline-block;
+
+    color:
+        #f58220;
+
+    font-size:
+        14px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        3px;
+
+    margin-bottom:
+        12px;
+}
+
+
+.ban-services-heading h2 {
+
+    margin:
+        0;
+
+    color:
+        #0b2a5b;
+
+    font-size:
+        44px;
+
+    line-height:
+        1.15;
+
+    font-weight:
+        800;
+}
+
+
+.ban-services-heading h2 strong {
+
+    display:
+        block;
+
+    color:
+        #f58220;
+
+}
+
+
+.ban-services-heading p {
+
+    max-width:
+        720px;
+
+    margin:
+        17px auto 0;
+
+    color:
+        #687386;
+
+    font-size:
+        16px;
+
+    line-height:
+        1.7;
+}
+
+
+
+/* ================= SERVICES GRID ================= */
+
+.ban-services-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap:
+        14px;
+}
+
+
+
+/* ================= SERVICE CARD ================= */
+
+.ban-service-card {
+
+    background:
+        #ffffff;
+
+    border:
+        1px solid #e2e7ee;
+
+    border-radius:
+        14px;
+
+    overflow:
+        hidden;
+
+    box-shadow:
+        0 7px 25px
+        rgba(11, 42, 91, 0.07);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+}
+
+
+.ban-service-card:hover {
+
+    transform:
+        translateY(-7px);
+
+    border-color:
+        rgba(245, 130, 32, .45);
+
+    box-shadow:
+        0 18px 40px
+        rgba(11, 42, 91, .14);
+}
+
+
+
+/* ================= IMAGE ================= */
+
+.ban-service-image {
+
+    position:
+        relative;
+
+    height:
+        245px;
+
+    overflow:
+        hidden;
+
+    background:
+        #e9eef5;
+}
+
+
+.ban-service-image img {
+
+    width:
+        100%;
+
+    height:
+        100%;
+
+    object-fit:
+        cover;
+
+    display:
+        block;
+
+    transition:
+        transform .5s ease;
+}
+
+
+.ban-service-card:hover
+.ban-service-image img {
+
+    transform:
+        scale(1.06);
+}
+
+
+
+/* ================= IMAGE OVERLAY ================= */
+
+.ban-image-overlay {
+
+    position:
+        absolute;
+
+    inset:
+        0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(0,0,0,.05),
+            rgba(5,20,45,.30)
+        );
+
+    pointer-events:
+        none;
+}
+
+
+
+/* ================= NUMBER ================= */
+
+.ban-service-number {
+
+    position:
+        absolute;
+
+    top:
+        12px;
+
+    left:
+        0;
+
+    z-index:
+        3;
+
+    background:
+        #f58220;
+
+    color:
+        #ffffff;
+
+    font-size:
+        15px;
+
+    font-weight:
+        800;
+
+    padding:
+        10px 15px;
+
+    border-radius:
+        0 9px 9px 0;
+}
+
+
+
+/* ================= ICON ================= */
+
+.ban-service-icon {
+
+    position:
+        absolute;
+
+    z-index:
+        4;
+
+    left:
+        50%;
+
+    bottom:
+        -27px;
+
+    transform:
+        translateX(-50%);
+
+    width:
+        58px;
+
+    height:
+        58px;
+
+    border-radius:
+        50%;
+
+    background:
+        #0b2a5b;
+
+    border:
+        5px solid #ffffff;
+
+    color:
+        #ffffff;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    font-size:
+        25px;
+
+    box-shadow:
+        0 5px 15px
+        rgba(0,0,0,.18);
+}
+
+
+
+/* ================= CONTENT ================= */
+
+.ban-service-content {
+
+    padding:
+        40px 22px 23px;
+
+    flex:
+        1;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+}
+
+
+.ban-service-content h3 {
+
+    margin:
+        0;
+
+    color:
+        #0b2a5b;
+
+    font-size:
+        20px;
+
+    line-height:
+        1.25;
+
+    text-align:
+        center;
+}
+
+
+.ban-orange-line {
+
+    width:
+        42px;
+
+    height:
+        2px;
+
+    background:
+        #f58220;
+
+    margin:
+        12px auto 13px;
+}
+
+
+.ban-service-content p {
+
+    margin:
+        0 0 17px;
+
+    color:
+        #687386;
+
+    font-size:
+        13px;
+
+    line-height:
+        1.6;
+
+    text-align:
+        center;
+
+    min-height:
+        42px;
+}
+
+
+
+/* ================= LIST ================= */
+
+.ban-service-content ul {
+
+    list-style:
+        none;
+
+    padding:
+        0;
+
+    margin:
+        0;
+}
+
+
+.ban-service-content li {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        9px;
+
+    margin-bottom:
+        9px;
+
+    color:
+        #26364c;
+
+    font-size:
+        12.5px;
+}
+
+
+.ban-service-content li span {
+
+    width:
+        17px;
+
+    height:
+        17px;
+
+    min-width:
+        17px;
+
+    border-radius:
+        50%;
+
+    background:
+        #f58220;
+
+    color:
+        #ffffff;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    font-size:
+        10px;
+
+    font-weight:
+        800;
+}
+
+
+
+/* ================= SERVICE BUTTON ================= */
+
+.ban-service-btn {
+
+    margin-top:
+        12px;
+
+    border:
+        none;
+
+    background:
+        transparent;
+
+    color:
+        #f58220;
+
+    font-size:
+        12px;
+
+    font-weight:
+        800;
+
+    cursor:
+        pointer;
+
+    text-align:
+        left;
+
+    padding:
+        5px 0;
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    gap:
+        7px;
+
+    transition:
+        gap .2s ease;
+}
+
+
+.ban-service-btn:hover {
+
+    gap:
+        12px;
+}
+
+
+
+/* ================= STATS BAR ================= */
+
+.ban-services-stats {
+
+    margin-top:
+        20px;
+
+    min-height:
+        125px;
+
+    border-radius:
+        14px;
+
+    overflow:
+        hidden;
+
+    background:
+        #0b2a5b;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4, 1fr) 1.3fr;
+
+    align-items:
+        stretch;
+}
+
+
+
+/* ================= STAT ================= */
+
+.ban-stat {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    gap:
+        12px;
+
+    border-right:
+        1px solid
+        rgba(255,255,255,.2);
+
+    padding:
+        15px;
+}
+
+
+.ban-stat-icon {
+
+    width:
+        43px;
+
+    height:
+        43px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.35);
+
+    border-radius:
+        50%;
+
+    color:
+        #ffffff;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    font-size:
+        19px;
+}
+
+
+.ban-stat strong {
+
+    display:
+        block;
+
+    color:
+        #ffffff;
+
+    font-size:
+        24px;
+
+    line-height:
+        1.1;
+}
+
+
+.ban-stat strong small {
+
+    font-size:
+        12px;
+}
+
+
+.ban-stat span {
+
+    display:
+        block;
+
+    color:
+        #c7d2e1;
+
+    font-size:
+        11px;
+
+    margin-top:
+        4px;
+}
+
+
+
+/* ================= CTA ================= */
+
+.ban-stat-cta {
+
+    background:
+        #f58220;
+
+    padding:
+        20px;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    justify-content:
+        center;
+}
+
+
+.ban-stat-cta strong {
+
+    color:
+        #ffffff;
+
+    font-size:
+        19px;
+
+    line-height:
+        1.2;
+}
+
+
+.ban-stat-cta span {
+
+    color:
+        #fff2e7;
+
+    font-size:
+        11px;
+
+    margin-top:
+        7px;
+
+    line-height:
+        1.4;
+}
+
+
+
+/* =========================================================
+   MODAL
+   ========================================================= */
+
+.ban-service-modal {
+
+    position:
+        fixed;
+
+    inset:
+        0;
+
+    z-index:
+        99999;
+
+    display:
+        none;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    padding:
+        20px;
+}
+
+
+.ban-service-modal.active {
+
+    display:
+        flex;
+}
+
+
+.ban-modal-overlay {
+
+    position:
+        absolute;
+
+    inset:
+        0;
+
+    background:
+        rgba(4, 17, 37, .75);
+
+    backdrop-filter:
+        blur(5px);
+}
+
+
+.ban-modal-box {
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+    width:
+        100%;
+
+    max-width:
+        510px;
+
+    padding:
+        42px 35px;
+
+    background:
+        #ffffff;
+
+    border-radius:
+        20px;
+
+    text-align:
+        center;
+
+    box-shadow:
+        0 30px 80px
+        rgba(0,0,0,.25);
+
+    animation:
+        banModalIn .3s ease;
+}
+
+
+@keyframes banModalIn {
+
+    from {
+
+        opacity:
+            0;
+
+        transform:
+            translateY(20px)
+            scale(.96);
+    }
+
+    to {
+
+        opacity:
+            1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+
+.ban-modal-close {
+
+    position:
+        absolute;
+
+    top:
+        12px;
+
+    right:
+        14px;
+
+    width:
+        35px;
+
+    height:
+        35px;
+
+    border:
+        none;
+
+    border-radius:
+        50%;
+
+    background:
+        #f1f4f8;
+
+    color:
+        #0b2a5b;
+
+    font-size:
+        23px;
+
+    cursor:
+        pointer;
+}
+
+
+.ban-modal-icon {
+
+    width:
+        58px;
+
+    height:
+        58px;
+
+    margin:
+        0 auto 15px;
+
+    border-radius:
+        50%;
+
+    background:
+        #fff1e6;
+
+    color:
+        #f58220;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    font-size:
+        25px;
+
+    font-weight:
+        800;
+}
+
+
+.ban-modal-label {
+
+    color:
+        #f58220;
+
+    font-size:
+        11px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        2px;
+}
+
+
+.ban-modal-box h3 {
+
+    margin:
+        8px 0;
+
+    color:
+        #0b2a5b;
+
+    font-size:
+        27px;
+}
+
+
+.ban-modal-box > p {
+
+    color:
+        #687386;
+
+    font-size:
+        14px;
+
+    line-height:
+        1.7;
+
+    margin:
+        0 auto 25px;
+
+    max-width:
+        430px;
+}
+
+
+.ban-modal-features {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    border-top:
+        1px solid #edf0f5;
+
+    padding-top:
+        20px;
+
+    margin-bottom:
+        25px;
+}
+
+
+.ban-modal-features div {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        4px;
+}
+
+
+.ban-modal-features strong {
+
+    color:
+        #f58220;
+
+    font-size:
+        18px;
+}
+
+
+.ban-modal-features span {
+
+    color:
+        #718096;
+
+    font-size:
+        11px;
+}
+
+
+.ban-modal-btn {
+
+    display:
+        inline-block;
+
+    text-decoration:
+        none;
+
+    background:
+        #f58220;
+
+    color:
+        #ffffff;
+
+    padding:
+        13px 25px;
+
+    border-radius:
+        8px;
+
+    font-size:
+        13px;
+
+    font-weight:
+        700;
+}
+
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+    .ban-services-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .ban-services-stats {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .ban-stat-cta {
+
+        grid-column:
+            span 2;
+
+        min-height:
+            100px;
+    }
+
+
+    .ban-stat:nth-child(2) {
+
+        border-right:
+            none;
+    }
+
+}
+
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .ban-services {
+
+        padding:
+            65px 15px;
+    }
+
+
+    .ban-services-heading h2 {
+
+        font-size:
+            31px;
+    }
+
+
+    .ban-services-heading p {
+
+        font-size:
+            14px;
+    }
+
+
+    .ban-services-grid {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            18px;
+    }
+
+
+    .ban-service-image {
+
+        height:
+            225px;
+    }
+
+
+    .ban-services-stats {
+
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+
+    .ban-stat {
+
+        border-right:
+            none;
+
+        border-bottom:
+            1px solid
+            rgba(255,255,255,.2);
+    }
+
+
+    .ban-stat-cta {
+
+        grid-column:
+            span 2;
+    }
+
+
+    .ban-modal-box {
+
+        padding:
+            38px 20px;
+    }
+
+
+    .ban-modal-features {
+
+        grid-template-columns:
+            1fr;
+    }
+
 }
