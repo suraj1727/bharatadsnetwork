@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css"> 
 </head>
 
 <body>
@@ -121,6 +121,277 @@
         </div>
 
     </section>
+
+   <!-- ================= OUR CLIENTS SECTION ================= -->
+<section class="our-clients" id="our-clients">
+
+    <div class="clients-container">
+
+        <!-- Heading -->
+        <div class="clients-heading">
+            <span>OUR CLIENTS</span>
+
+            <h2>
+                Trusted by <strong>Leading Brands</strong>
+            </h2>
+
+            <p>
+                We help brands build stronger local visibility through
+                our growing retail advertising network.
+            </p>
+        </div>
+
+
+        <!-- ================= CLIENT GRID ================= -->
+        <div class="clients-grid">
+
+            <!-- 1. RVS CET -->
+            <div class="client-card">
+
+                <div class="client-logo">
+                    <img
+                        src="rvs.jpeg"
+                        alt="RVS CET"
+                    >
+                </div>
+
+                <div class="client-content">
+
+                    <div class="client-category">
+                        EDUCATION
+                    </div>
+
+                    <h3>RVS CET</h3>
+
+                    <p>
+                        RVS College of Engineering & Technology
+                    </p>
+
+                    <button
+                        class="campaign-btn"
+                        onclick="showClient('rvs')"
+                    >
+                        View Campaign
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 2. Centre For Sight -->
+            <div class="client-card">
+
+                <div class="client-logo">
+                    <img
+                        src="efs.jpeg"
+                        alt="Centre For Sight"
+                    >
+                </div>
+
+                <div class="client-content">
+
+                    <div class="client-category">
+                        HEALTHCARE
+                    </div>
+
+                    <h3>Centre For Sight</h3>
+
+                    <p>
+                        Eye Care & Eye Hospital
+                    </p>
+
+                    <button
+                        class="campaign-btn"
+                        onclick="showClient('cfs')"
+                    >
+                        View Campaign
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 3. Suzuki -->
+            <div class="client-card">
+
+                <div class="client-logo">
+                    <img
+                        src="suzuki.jpeg"
+                        alt="Suzuki"
+                    >
+                </div>
+
+                <div class="client-content">
+
+                    <div class="client-category">
+                        AUTOMOBILE
+                    </div>
+
+                    <h3>Suzuki</h3>
+
+                    <p>
+                        Automotive Brand Campaign
+                    </p>
+
+                    <button
+                        class="campaign-btn"
+                        onclick="showClient('suzuki')"
+                    >
+                        View Campaign
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 4. Vedansh Capital Services -->
+            <div class="client-card">
+
+                <div class="client-logo vedansh-logo">
+                    <img
+                        src="vedansh.jpeg"
+                        alt="Vedansh Capital Services"
+                    >
+                </div>
+
+                <div class="client-content">
+
+                    <div class="client-category">
+                        FINANCIAL SERVICES
+                    </div>
+
+                    <h3>Vedansh Capital Services</h3>
+
+                    <p>
+                        Financial services & investment solutions.
+                    </p>
+
+                    <button
+                        class="campaign-btn"
+                        onclick="showClient('vedansh')"
+                    >
+                        View Campaign
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 5. Omar Salon & Spa -->
+            <div class="client-card">
+
+                <div class="client-logo">
+                    <img
+                        src="omr.jpeg"
+                        alt="Omar Salon & Spa"
+                    >
+                </div>
+
+                <div class="client-content">
+
+                    <div class="client-category">
+                        SALON & SPA
+                    </div>
+
+                    <h3>Omar Salon & Spa</h3>
+
+                    <p>
+                        Unisex salon & spa brand campaign.
+                    </p>
+
+                    <button
+                        class="campaign-btn"
+                        onclick="showClient('omar')"
+                    >
+                        View Campaign
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom CTA -->
+        <div class="clients-bottom">
+
+            <p>
+                Want your brand to be seen where customers shop?
+            </p>
+
+            <a href="#contact" class="clients-cta">
+                Advertise With Us
+                <span>→</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CLIENT POPUP ================= -->
+
+<div class="client-modal" id="clientModal">
+
+    <div
+        class="modal-overlay"
+        onclick="closeClient()">
+    </div>
+
+    <div class="client-modal-box">
+
+        <button
+            class="modal-close"
+            onclick="closeClient()">
+            
+        </button>
+
+        <div class="modal-icon">
+            ✓
+        </div>
+
+        <h3 id="modalTitle">
+            Client Campaign
+        </h3>
+
+        <p id="modalText">
+            Campaign details
+        </p>
+
+        <div class="modal-details">
+
+            <div>
+                <strong>50+</strong>
+                <span>Retail Locations</span>
+            </div>
+
+            <div>
+                <strong>20 Sec</strong>
+                <span>Ad Duration</span>
+            </div>
+
+            <div>
+                <strong>5 Min</strong>
+                <span>Ad Loop</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 
     <!-- ABOUT -->
 <section id="about">
