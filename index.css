@@ -742,3 +742,550 @@ section:nth-child(4) { animation-delay: 0.8s; }
         font-size: 18px;
     }
 }
+
+/* =========================================================
+   BHARAT ADS NETWORK
+   OUR CLIENTS SECTION
+   ========================================================= */
+.our-clients {
+    width: 100%;
+    padding: 90px 20px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.clients-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* ================= HEADING ================= */
+
+.clients-heading {
+    text-align: center;
+    max-width: 950px;
+    margin: 0 auto 50px;
+}
+
+.clients-heading span {
+    display: inline-block;
+    color: #f58220;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.clients-heading h2 {
+    margin: 0;
+    color: #0b2a5b;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.clients-heading h2 strong {
+    color: #f58220;
+}
+
+.clients-heading p {
+    margin: 15px auto 0;
+    max-width: 650px;
+    color: #687386;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* ================= CLIENT GRID ================= */
+
+.clients-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 25px;
+}
+
+
+/*
+   5 cards:
+   First 3 cards = 2 columns each
+   Last 2 cards = 2 columns each
+*/
+
+.client-card {
+    grid-column: span 2;
+}
+
+
+/* Last two cards centered */
+
+.client-card:nth-child(4) {
+    grid-column: 2 / span 2;
+}
+
+.client-card:nth-child(5) {
+    grid-column: 4 / span 2;
+}
+
+
+/* ================= CARD ================= */
+
+.client-card {
+    background: #ffffff;
+    border: 1px solid #e7ebf2;
+    border-radius: 18px;
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 30px rgba(11, 42, 91, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.client-card:hover {
+    transform: translateY(-8px);
+
+    border-color:
+        rgba(245, 130, 32, 0.35);
+
+    box-shadow:
+        0 18px 45px rgba(11, 42, 91, 0.14);
+}
+
+
+/* ================= LOGO ================= */
+
+.client-logo {
+    height: 210px;
+    padding: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f8fafc;
+
+    border-bottom:
+        1px solid #edf0f5;
+}
+
+.client-logo img {
+    max-width: 85%;
+    max-height: 160px;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+
+    transition:
+        transform 0.3s ease;
+}
+
+.client-card:hover .client-logo img {
+    transform: scale(1.05);
+}
+
+
+/* Vedansh image */
+
+.vedansh-logo {
+    background: #f8fafc;
+}
+
+.vedansh-logo img {
+    max-height: 165px;
+}
+
+
+/* ================= CONTENT ================= */
+
+.client-content {
+    padding: 25px;
+
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.client-category {
+    color: #f58220;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 8px;
+}
+
+.client-content h3 {
+    color: #0b2a5b;
+
+    font-size: 22px;
+
+    margin: 0 0 7px;
+
+    font-weight: 700;
+}
+
+.client-content p {
+    color: #697586;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    margin: 0 0 22px;
+}
+
+
+/* ================= BUTTON ================= */
+
+.campaign-btn {
+    margin-top: auto;
+
+    width: fit-content;
+
+    border: none;
+
+    background: #0b2a5b;
+
+    color: #ffffff;
+
+    padding: 12px 18px;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+.campaign-btn:hover {
+    background: #f58220;
+    transform: translateX(3px);
+}
+
+.campaign-btn span {
+    font-size: 17px;
+    line-height: 1;
+}
+
+
+/* ================= BOTTOM CTA ================= */
+
+.clients-bottom {
+    margin-top: 55px;
+
+    padding: 25px 30px;
+
+    background: #f5f8fc;
+
+    border-radius: 14px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.clients-bottom p {
+    margin: 0;
+
+    color: #0b2a5b;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.clients-cta {
+    text-decoration: none;
+
+    background: #f58220;
+
+    color: #ffffff;
+
+    padding: 12px 21px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+.clients-cta:hover {
+    background: #0b2a5b;
+    transform: translateY(-2px);
+}
+
+
+/* ================= POPUP ================= */
+
+.client-modal {
+    position: fixed;
+    inset: 0;
+
+    z-index: 9999;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+.client-modal.active {
+    display: flex;
+}
+
+.modal-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        rgba(5, 18, 38, 0.72);
+
+    backdrop-filter: blur(5px);
+}
+
+.client-modal-box {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 520px;
+
+    padding: 40px;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow:
+        0 25px 80px rgba(0, 0, 0, .25);
+
+    animation:
+        modalIn 0.3s ease;
+}
+
+@keyframes modalIn {
+
+    from {
+        opacity: 0;
+        transform:
+            translateY(20px)
+            scale(.96);
+    }
+
+    to {
+        opacity: 1;
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+.modal-close {
+    position: absolute;
+
+    top: 14px;
+    right: 16px;
+
+    width: 36px;
+    height: 36px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #f1f4f8;
+
+    color: #0b2a5b;
+
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+.modal-icon {
+    width: 55px;
+    height: 55px;
+
+    margin: 0 auto 18px;
+
+    border-radius: 50%;
+
+    background: #fff1e6;
+
+    color: #f58220;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.client-modal-box h3 {
+    color: #0b2a5b;
+
+    font-size: 25px;
+
+    margin-bottom: 10px;
+}
+
+.client-modal-box > p {
+    color: #697586;
+
+    font-size: 15px;
+
+    margin-bottom: 25px;
+}
+
+.modal-details {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    border-top:
+        1px solid #edf0f5;
+
+    padding-top: 22px;
+
+    gap: 10px;
+}
+
+.modal-details div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+.modal-details strong {
+    color: #f58220;
+
+    font-size: 19px;
+}
+
+.modal-details span {
+    color: #718096;
+
+    font-size: 11px;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+    .clients-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .client-card {
+        grid-column: auto !important;
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .our-clients {
+        padding:
+            65px 15px;
+    }
+
+    .clients-heading {
+        margin-bottom: 35px;
+    }
+
+    .clients-heading h2 {
+        font-size: 31px;
+    }
+
+    .clients-heading p {
+        font-size: 14px;
+    }
+
+    .clients-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .client-card {
+        grid-column: auto !important;
+    }
+
+    .client-logo {
+        height: 190px;
+    }
+
+    .client-content {
+        padding: 22px;
+    }
+
+    .clients-bottom {
+        text-align: center;
+
+        padding: 25px 18px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .modal-details {
+        grid-template-columns: 1fr;
+    }
+
+    .client-modal-box {
+        padding: 35px 22px;
+    }
+}
